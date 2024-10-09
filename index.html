@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
+<body class="h-screen bg-gradient-to-t to-red-200 from-violet-500">
+    <form class="container border-violet-800 shadow rounded mt-8 bg-violet-300 p-4 flex flex-col gap-4 items-center mx-auto  w-1/2" onsubmit="calcularMedia(event)">
+        <h1 class="text-2xl font-semibold">Boletim</h1>
+        <div class="flex flex-col w-full">
+            <label for="nota1">Nota 1</label>
+            <input class="border border-violet-800 rounded shadow py-1 pl-2 bg bg-violet-100 focus:bg-violet-200" min="0" max="10" type="number" id="nota1" placeholder="Digite sua nota.">
+        </div>
+        <div class="flex flex-col w-full">
+            <label for="nota2">Nota 2</label>
+            <input class="border border-violet-800 rounded shadow py-1 pl-2 bg bg-violet-100 focus:bg-violet-200" min="0" max="10" type="number" id="nota2" placeholder="Digite sua nota.">
+        </div>
+        <div class="flex flex-col w-full">
+            <label for="nota3">Nota 3</label>
+            <input class="border border-violet-800 rounded shadow py-1 pl-2 bg bg-violet-100 focus:bg-violet-200" min="0" max="10" type="number" id="nota3" placeholder="Digite sua nota.">
+        </div>
+        <button class="bg-violet-500 rounded border-violet-800 shadow py-1 px-2 w-1/2 hover:bg-violet-700">Calcular</button>
+        <h3 id="display">Consulte sua média final.</h3>
+
+    </form>
   
-    <script src="index.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
